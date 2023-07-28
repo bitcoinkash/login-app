@@ -15,7 +15,7 @@ const Login = () => {
       const data = { name: usernameOrEmail.toLowerCase(), password: password };
   
       axios
-        .post('http://localhost:3000/login', data)
+        .post('http://localhost:4000/login', data)
         .then((response) => {
           console.log(response.data);
           const username  = response.data.data.username;
