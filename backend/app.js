@@ -27,7 +27,7 @@ app.get("/*", (req, res) => {
 app.use(cors());
 app.use(express.json());
 
-const port = 3000;
+const port = 4000;
 const pool = new pg.Pool({
     connectionString: process.env.POSTGRES_URL,
     ssl: {
